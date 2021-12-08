@@ -15,9 +15,9 @@ echo "Set timezone Asia/Bangkok"
 echo "***************************"
 sudo timedatectl set-timezone Asia/Bangkok
 echo "***************************"
-echo "Running update Ubuntu"
+echo "Running update and then upgrade Ubuntu"
 echo "***************************"
-sudo apt update -y
+sudo apt update && sudo apt upgrade -y
 sleep 5
 clear
 echo "***************************"
